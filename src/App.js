@@ -5,6 +5,8 @@ import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 
+import Footer from "./components/Footer";
+
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -40,11 +42,11 @@ class App extends React.Component {
   }
   render() {
     return (
-      //
       <Router>
         {/* padding is 0 */}
         {/* fluid is true - to use full screen */}
         <Container className="p-0" fluid={true}>
+          {/* <------------------------ Header ----------------------> */}
           <Navbar className="border-bottom" bg="transparent" expand="lg">
             {/* for personal branding */}
             <Navbar.Brand>Kim Cyrus Esquibel</Navbar.Brand>
@@ -68,6 +70,11 @@ class App extends React.Component {
               </Nav>
             </Navbar.Collapse>
           </Navbar>
+
+          {/* <------------------------ Body ----------------------> */}
+
+          {/* <------------------------ Footer ----------------------> */}
+          <Footer />
         </Container>
       </Router>
     );
