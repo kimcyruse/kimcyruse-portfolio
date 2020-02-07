@@ -14,16 +14,15 @@ function Footer() {
         {/* p-3 - padding 3*/}
         <Row className="border-top justify-content-between p-3">
           {/* p-0 - padding 0 */}
-          {/* md = {3} - use 3 grid in md */}
-          {/* sm = {12} - use 12 grid in sm*/}
-          <Col className="p-0" md={3} sm={12}>
+          {/* sm = {3} - use 3 grid in md */}
+          <Col className="p-0" sm={3}>
             Kim Cyrus Esquibel
           </Col>
           {/* p-0 - padding 0 */}
           {/* d-flex - create simple flexbox container*/}
           {/* justify-content-end - put the content at end */}
           {/* md = {8} - use 8 grid in md */}
-          <Col className="p-0 d-flex justify-content-end" sm={12} md={8}>
+          <Col className="p-0 d-flex justify-content-end" sm={8}>
             © 2019 designed and developed by Kim Cyrus Esquibel
           </Col>
         </Row>

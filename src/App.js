@@ -6,6 +6,10 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 
 import Footer from "./components/Footer";
+import HomePage from "./pages/HomePage";
+import ProjectsPage from "./pages/ProjectsPage";
+import AboutPage from "./pages/AboutPage";
+import ContactPage from "./pages/ContactPage";
 
 class App extends React.Component {
   constructor(props) {
@@ -35,6 +39,7 @@ class App extends React.Component {
       about: {
         title: "About Me"
       },
+      // contact object
       contact: {
         title: "Let's Make Projects"
       }
@@ -55,6 +60,7 @@ class App extends React.Component {
 
             <Navbar.Collapse id="navbar-toggle">
               <Nav className="ml-auto">
+                {/* uses a Link instead of anchor tag */}
                 <Link className="nav-link" to="/">
                   Home
                 </Link>
@@ -72,6 +78,37 @@ class App extends React.Component {
           </Navbar>
 
           {/* <------------------------ Body ----------------------> */}
+          {/* Router for Home Page */}
+          {/* Route - whenever you are in this 'path' render this 'HomePage' */}
+          <Route
+            path="/"
+            exact
+            render={() => (
+              <HomePage
+                title={this.state.home.title}
+                subTitle={this.state.home.subTitle}
+                text={this.state.home.text}
+              />
+            )}
+          />
+          {/* Router for Projects Page */}
+          {/* Route - whenever you are in this 'path' render this 'ProjectPage' */}
+          <Route
+            path="/projects"
+            render={() => <ProjectsPage title={this.state.projects.title} />}
+          />
+          {/* Router for About Page */}
+          {/* Route - whenever you are in this 'path' render this 'AboutPage' */}
+          <Route
+            path="/about"
+            render={() => <AboutPage title={this.state.about.title} />}
+          />
+          {/* Router for Contact Page */}
+          {/* Route - whenever you are in this 'path' render this 'ContactPage' */}
+          <Route
+            path="/contact"
+            render={() => <ContactPage title={this.state.contact.title} />}
+          />
 
           {/* <------------------------ Footer ----------------------> */}
           <Footer />
