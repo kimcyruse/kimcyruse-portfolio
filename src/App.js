@@ -11,12 +11,26 @@ import ProjectsPage from "./pages/ProjectsPage";
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
 
+// test-particles
+import Particles from "react-particles-js";
+const particleOpt = {
+  particles: {
+    number: {
+      value: 150,
+      density: {
+        enable: true,
+        value_area: 500
+      }
+    }
+  }
+};
+
 class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       // string
-      title: "Kim Cyruse Esquibel",
+      title: "Kim Cyrus Esquibel",
       // array of objects
       // object { title path}
       headerLinks: [
@@ -27,8 +41,8 @@ class App extends React.Component {
       ],
       // home object
       home: {
-        title: "React Developer",
-        subTitle: "Projects for fun",
+        title: "Kim Cyrus Esquibel",
+        subTitle: "A WEB DEVELOPER",
         text: "Checkout my projects below"
       },
       // projects object
@@ -52,7 +66,7 @@ class App extends React.Component {
         {/* fluid is true - to use full screen */}
         <Container className="p-0" fluid={true}>
           {/* <------------------------ Header ----------------------> */}
-          <Navbar className="border-bottom" bg="transparent" expand="lg">
+          <Navbar bg="transparent" expand="lg">
             {/* for personal branding */}
             <Navbar.Brand>Kim Cyrus Esquibel</Navbar.Brand>
 
@@ -76,6 +90,12 @@ class App extends React.Component {
               </Nav>
             </Navbar.Collapse>
           </Navbar>
+
+          {/* test-particles */}
+          <Particles
+            canvasClassName="particleCanvas"
+            params={particleOpt}
+          ></Particles>
 
           {/* <------------------------ Body ----------------------> */}
           {/* Router for Home Page */}
