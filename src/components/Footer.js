@@ -9,10 +9,9 @@ function Footer() {
     <footer className="mt-5">
       {/* fluid={true} - to use full screen */}
       <Container fluid={true}>
-        {/* border-top - create a border on top of element */}
         {/* justify-content-between - creates space between content item */}
         {/* p-3 - padding 3*/}
-        <Row className="border-top justify-content-between p-3">
+        <Row className="justify-content-between p-3">
           {/* p-0 - padding 0 */}
           {/* sm = {3} - use 3 grid in md */}
           <Col className="p-0" sm={3}>
