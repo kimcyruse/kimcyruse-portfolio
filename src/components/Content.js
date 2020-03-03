@@ -4,7 +4,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 
-function Component(props) {
+function Content(props) {
   return (
     <Container fluid={true}>
       <Row className="justify-content-center">
@@ -14,4 +14,4 @@ function Component(props) {
   );
 }
 
-export default Component;
+export default Content;
