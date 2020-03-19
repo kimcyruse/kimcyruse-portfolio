@@ -6,6 +6,8 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
+import Typical from "react-typical";
+
 function Hero(props) {
   return (
     // bg-transparent - background is transparent
@@ -29,7 +31,23 @@ function Hero(props) {
             {/* display-4 - display 4 heading larger */}
             {/* font-weight-light - weight is light */}
             {props.subTitle && (
-              <h3 className="display-4 font-weight-light">{props.subTitle}</h3>
+              <h3 className="display-4 font-weight-light">
+                {props.subTitle}
+                <Typical
+                  loop={Infinity}
+                  wrapper="b"
+                  steps={[
+                    "Developer",
+                    1000,
+                    "Designer",
+                    1000,
+                    "Traveler",
+                    1000,
+                    "Raver",
+                    1000
+                  ]}
+                ></Typical>
+              </h3>
             )}
             {/* lead - to make paragraph stand out */}
             {/* font-weight-light - weight is light */}
