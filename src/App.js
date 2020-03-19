@@ -42,7 +42,7 @@ class App extends React.Component {
       // home object
       home: {
         title: "Kim Cyrus Esquibel",
-        subTitle: "A WEB DEVELOPER",
+        subTitle: "I am a ",
         text: "Checkout my projects below"
       },
       // projects object
@@ -94,8 +94,50 @@ class App extends React.Component {
           {/* test-particles */}
           <Particles
             canvasClassName="particleCanvas"
-            params={particleOpt}
-          ></Particles>
+            params={{
+              particles: {
+                number: {
+                  value: 200,
+                  density: {
+                    enable: true,
+                    value_area: 1500
+                  }
+                },
+                line_linked: {
+                  enable: true,
+                  opacity: 1
+                },
+                move: {
+                  direction: "",
+                  speed: 1
+                },
+                size: {
+                  value: 1
+                },
+                opacity: {
+                  anim: {
+                    enable: true,
+                    speed: 20,
+                    opacity_min: 0.05
+                  }
+                }
+              },
+              interactivity: {
+                events: {
+                  onclick: {
+                    enable: true,
+                    mode: "push"
+                  }
+                },
+                modes: {
+                  push: {
+                    particles_nb: 1
+                  }
+                }
+              },
+              retina_detect: true
+            }}
+          />
 
           {/* <------------------------ Body ----------------------> */}
           {/* Router for Home Page */}
