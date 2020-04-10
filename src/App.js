@@ -11,20 +11,6 @@ import ProjectsPage from "./pages/ProjectsPage";
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
 
-// test-particles
-import Particles from "react-particles-js";
-const particleOpt = {
-  particles: {
-    number: {
-      value: 150,
-      density: {
-        enable: true,
-        value_area: 500
-      }
-    }
-  }
-};
-
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -68,7 +54,7 @@ class App extends React.Component {
           {/* <------------------------ Header ----------------------> */}
           <Navbar bg="transparent" expand="lg">
             {/* for personal branding */}
-            <Navbar.Brand>Kim Cyrus Esquibel</Navbar.Brand>
+            <Navbar.Brand></Navbar.Brand>
 
             <Navbar.Toggle className="border-0" aria-controls="navbar-toggle" />
 
@@ -90,54 +76,6 @@ class App extends React.Component {
               </Nav>
             </Navbar.Collapse>
           </Navbar>
-
-          {/* test-particles */}
-          <Particles
-            canvasClassName="particleCanvas"
-            params={{
-              particles: {
-                number: {
-                  value: 200,
-                  density: {
-                    enable: true,
-                    value_area: 1500
-                  }
-                },
-                line_linked: {
-                  enable: true,
-                  opacity: 1
-                },
-                move: {
-                  direction: "",
-                  speed: 1
-                },
-                size: {
-                  value: 1
-                },
-                opacity: {
-                  anim: {
-                    enable: true,
-                    speed: 20,
-                    opacity_min: 0.05
-                  }
-                }
-              },
-              interactivity: {
-                events: {
-                  onclick: {
-                    enable: true,
-                    mode: "push"
-                  }
-                },
-                modes: {
-                  push: {
-                    particles_nb: 1
-                  }
-                }
-              },
-              retina_detect: true
-            }}
-          />
 
           {/* <------------------------ Body ----------------------> */}
           {/* Router for Home Page */}
