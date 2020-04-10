@@ -5,23 +5,13 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  /* test */
-  background: #ff8008; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #ffc837,
-    #ff8008
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #ffc837,
-    #ff8008
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.particleCanvas {
-  position: absolute !important;
+h1,
+h2,
+h3 {
+  font-family: "Fredericka the Great", cursive;
+  text-align: center;
 }
 
 code {
@@ -31,14 +21,14 @@ code {
 
 /* style for the card component - used k.card naming cuz card class is reserved by bootstrap */
 .k-card {
-  margin: 20px;
+  margin: 10px;
 }
 
 /* style for the card image */
 .k-card-image {
   border-radius: 10px;
-  width: 300px;
-  height: 480px;
+  width: 200px;
+  height: 280px;
   box-shadow: 0px 0px 3px 1px #ccc;
 }
 
