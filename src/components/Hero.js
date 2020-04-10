@@ -26,7 +26,9 @@ function Hero(props) {
             {/* display-1 - display 1 heading larger */}
             {/* font-weight-bolder - weight is bold */}
             {props.title && (
-              <h1 className="display-1 font-weight-bolder">{props.title}</h1>
+              <h1 className="display-4 text-center font-weight-light">
+                {props.title}
+              </h1>
             )}
             {/* display-4 - display 4 heading larger */}
             {/* font-weight-light - weight is light */}
